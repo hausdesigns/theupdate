@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8d8f97 0%, #ede9f1 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.hero-section {
+    background-image: url(../images/eddie.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    padding: 0;
+
+}
+
+
