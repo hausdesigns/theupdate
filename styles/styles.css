@@ -79,6 +79,13 @@ main {
     background-color: #2f3a27;
 }
 
+
+
+.news-content {
+    overflow-y: auto;
+}
+
+
 .news-img {
     width: 100%;
     height: 400px;
