@@ -125,9 +125,10 @@ main {
 }
 
 .news-card {
-    background: #ffffff;          /* white background */
-    border-radius: 20px;          /* soft rounded corners */
+    background: #ffffff;          
+    border-radius: 20px;          
     padding: 20px;
+
 
     /* raised effect */
     box-shadow: 
@@ -135,6 +136,10 @@ main {
         inset 0 1px 0 rgba(47, 113, 8, 0.8);
 
     transition: all 0.2s ease;
+
+    max-height: 300px ;
+    overflow: auto;
+
 }
 
 /* hover lift */
