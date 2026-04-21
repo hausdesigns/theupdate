@@ -41,13 +41,38 @@ const article4Title = document.getElementById('article4Title');
 const article4Text = document.getElementById('article4Text');
 const article4Link = document.getElementById('article4Link');
 
+const article5Source = document.getElementById('article5Source');
+const article5Title = document.getElementById('article5Title');
+const article5Text = document.getElementById('article5Text');
+const article5Link = document.getElementById('article5Link');
+
+const article6Source = document.getElementById('article6Source');
+const article6Title = document.getElementById('article6Title');
+const article6Text = document.getElementById('article6Text');
+const article6Link = document.getElementById('article6Link');
+
+const article7Source = document.getElementById('article7Source');
+const article7Title = document.getElementById('article7Title');
+const article7Text = document.getElementById('article7Text');
+const article7Link = document.getElementById('article7Link');
+
+const article8Source = document.getElementById('article8Source');
+const article8Title = document.getElementById('article8Title');
+const article8Text = document.getElementById('article8Text');
+const article8Link = document.getElementById('article8Link');
+
+const article9Source = document.getElementById('article9Source');
+const article9Title = document.getElementById('article9Title');
+const article9Text = document.getElementById('article9Text');
+const article9Link = document.getElementById('article9Link');
+
 // Students should change these values.
 const cityName = 'Your City';
 const latitude = 36.16;
 const longitude = -86.78;
 
 // Students should build their own news URL with their own key and settings.
-const newsUrl = 'https://newsdata.io/api/1/latest?apikey=pub_28b1e5c2749946b0b695cbb2db508ae5&country=us&language=en&category=science,world,politics,health,entertainment';
+const newsUrl = 'https://newsdata.io/api/1/latest?apikey=pub_28b1e5c2749946b0b695cbb2db508ae5&country=us&language=en&category=science,world,politics,health,entertainment&size=10';
 
 function showDate() {
   const today = new Date();
@@ -142,6 +167,11 @@ async function loadNews() {
     const article2 = data.results[2];
     const article3 = data.results[3];
     const article4 = data.results[4];
+    const article5 = data.results[5];
+    const article6 = data.results[6];
+    const article7 = data.results[7];
+    const article8 = data.results[8];
+    const article9 = data.results[9];
 
     if (!data.results || data.results.length === 0) {
       newsError.textContent = 'Could not load news articles.';
@@ -186,6 +216,42 @@ async function loadNews() {
       article4Text.textContent = article4.description || 'No description available.';
       article4Link.href = article4.link;
     }
+
+    if (article5) {
+      article5Source.textContent = article5.source_name;
+      article5Title.textContent = article5.title;
+      article5Text.textContent = article5.description || 'No description available.';
+      article5Link.href = article5.link;
+   }
+
+   if (article6) {
+      article6Source.textContent = article6.source_name;
+      article6Title.textContent = article6.title;
+      article6Text.textContent = article6.description || 'No description available.';
+      article6Link.href = article6.link;
+   }
+   
+   if (article7) {
+      article7Source.textContent = article7.source_name;
+      article7Title.textContent = article7.title;
+      article7Text.textContent = article7.description || 'No description available.';
+      article7Link.href = article7.link;
+    }
+
+    if (article8) {
+      article8Source.textContent = article8.source_name;
+      article8Title.textContent = article8.title;
+      article8Text.textContent = article8.description || 'No description available.';
+      article8Link.href = article8.link;
+    }
+    
+    if (article9) {
+      article9Source.textContent = article9.source_name;
+      article9Title.textContent = article9.title;
+      article9Text.textContent = article9.description || 'No description available.';
+      article9Link.href = article9.link;
+    }
+    
   } catch (error) {
     newsError.textContent = 'Could not load news articles.';
     newsError.classList.remove('d-none');

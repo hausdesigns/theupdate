@@ -17,64 +17,164 @@
         <main>
             <section class="py-5 text-center container hero-section">
                 <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Album example</h1>
-                        <p class="lead text-body-secondary">Something short and leading about the collection below—its
-                            contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply
-                            skip over it entirely.</p>
-                        <p> <a href="#" class="btn btn-primary my-2">Main call to action</a> <a href="#"
-                                class="btn btn-secondary my-2">Secondary action</a> </p>
+                    <div class="col-lg-6 col-md-8 mx-auto badge text-bg-light text-wrap" style="width: 20rem;">
+                        <h1 class="fw-bold update">The Update</h1>
                     </div>
+
+                    <p class="lead text-body-secondary">keeping you updated with the latest news</p>
+
                 </div>
             </section>
             
-            <p id="currentDate"></p>
-            <p id="weatherCity"></p>
-            <p id="weatherIcon"></p>
-            <p id="weatherTemp"></p>
-            <p id="weatherCondition"></p>
-            <p id="weatherWind"></p>
-            <p id="weatherError"></p>
-            <p id="rateEUR"></p>
-            <p id="rateGBP"></p>
-            <p id="rateJPY"></p>
-            <p id="rateMXN"></p>
-            <p id="rateUAH"></p>
-            <p id="currencyError"></p>
-            <p id="featuredImage"></p>
-            <p id="featuredSource"></p>
-            <p id="featuredTitle"></p>
-            <p id="featuredText"></p>
-            <p id="featuredLink"></p>
-            <p id="newsError"></p>
-            <p id="article1source"></p>
-            <p id="article1title"></p>
-            <p id="article1text"></p>
-            <p id="article1link"></p>
-            <p id="article2source"></p>
-            <p id="article2title"></p>
-            <p id="article2text"></p>
-            <p id="article2link"></p>
-            <p id="article3source"></p>
-            <p id="article3title"></p>
-            <p id="article3text"></p>
-            <p id="article3link"></p>
-            <p id="article4source"></p>
-            <p id="article4title"></p>
-            <p id="article4text"></p>
-            <p id="article4link"></p>
+            <section class="container text-center my-4">
+                <p id="currentDate"></p>
+            </section>
 
-        
+            
+            <section class="container text-center my-5 pill">
+                <h2 class="mb-4">News</h2>
+
+                <div class="news-featured mb-4">
+                     <img id="featuredImage" class="news-img" />
+                    <div class="news-content">
+                        <p id="featuredSource" class="news-source"></p>
+                        <h3 id="featuredTitle"></h3>
+                        <p id="featuredText"></p>
+                         <a id="featuredLink" class="news-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+
+   
+             <div class="news-grid">
+
+                    <div class="news-card">
+                       <p id="article1Source" class="news-source"></p>
+                        <h4 id="article1Title"></h4>
+                     <p id="article1Text"></p>
+                        <a id="article1Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                          <p id="article2Source" class="news-source"></p>
+                         <h4 id="article2Title"></h4>
+                          <p id="article2Text"></p>
+                        <a id="article2Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                       <p id="article3Source" class="news-source"></p>
+                      <h4 id="article3Title"></h4>
+                       <p id="article3Text"></p>
+                       <a id="article3Link" class="news-link" target="_blank">Read more</a>
+                   </div>
+
+                   <div class="news-card">
+                      <p id="article4Source" class="news-source"></p>
+                      <h4 id="article4Title"></h4>
+                      <p id="article4Text"></p>
+                      <a id="article4Link" class="news-link" target="_blank">Read more</a>
+                   </div>
+
+                   <div class="news-card">
+                      <p id="article5Source" class="news-source"></p>
+                      <h4 id="article5Title"></h4>
+                      <p id="article5Text"></p>
+                      <a id="article5Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                      <p id="article6Source" class="news-source"></p>
+                      <h4 id="article6Title"></h4>
+                      <p id="article6Text"></p>
+                      <a id="article6Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                      <p id="article7Source" class="news-source"></p>
+                      <h4 id="article7Title"></h4>
+                      <p id="article7Text"></p>
+                      <a id="article7Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                      <p id="article8Source" class="news-source"></p>
+                      <h4 id="article8Title"></h4>
+                      <p id="article8Text"></p>
+                      <a id="article8Link" class="news-link" target="_blank">Read more</a>
+                    </div>
+
+                    <div class="news-card">
+                      <p id="article9Source" class="news-source"></p>
+                      <h4 id="article9Title"></h4>
+                      <p id="article9Text"></p>
+                      <a id="article9Link" class="news-link" target="_blank">Read more</a>
+                    </div>
 
 
+                </div>
+              <p id="newsError" class="text-danger mt-3"></p>
+          </section>
 
+       <section class="container my-4">
+    <div class="row g-4">
 
+        <!-- Weather Card -->
+        <div class="col-12 col-md-6">
+            <div class="custom-card h-100">
+                  <h2 class="text-center">Weather</h2>
+                <img src="images/abstractweather.jpg" alt="Weather Image" class="card-img">
 
+                <div class="card-content p-4">
+                    <h3>Today's Forecast</h3>
+                    <p>Check the latest weather updates, temperature, and conditions in your area.</p>
 
+                    <p id="weatherCity"></p>
+                    <p id="weatherIcon"></p>
+                    <p id="weatherTemp"></p>
+                    <p id="weatherCondition"></p>
+                    <p id="weatherWind"></p>
+                    <p id="weatherError" class="text-danger"></p>
 
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+            </div>
+        </div>
 
+        <!-- Currency Card -->
+        <div class="col-12 col-md-6">
+            <div class="custom-card h-100">
+                <h2 class="text-center">Currency</h2>
+                <img src="images/currency.jpg" alt="Currency Image" class="card-img">
 
+                <div class="card-content p-4">
+                    <h3>Current Exchange Rates</h3>
+                    <p>Get the latest exchange rates for major currencies against the US Dollar.</p>
 
+                    <h5>Euro</h5>
+                    <p id="rateEUR"></p>
+
+                    <h5>British Pound</h5>
+                    <p id="rateGBP"></p>
+
+                    <h5>Japanese Yen</h5>
+                    <p id="rateJPY"></p>
+
+                    <h5>Mexican Peso</h5>
+                    <p id="rateMXN"></p>
+
+                    <h5>Ukrainian Hryvnia</h5>
+                    <p id="rateUAH"></p>
+
+                    <p id="currencyError" class="text-danger"></p>
+
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+            
 
 
         </main>
