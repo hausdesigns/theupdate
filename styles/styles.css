@@ -5,17 +5,26 @@
 }
 
 body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #a19898;
+    background-image: radial-gradient(#052d11 1px, transparent 1px);
+    background-size: 20px 20px;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #c6c7c5 0%, #153205 100%);
-    min-height: 100vh;
-    padding: 20px;
+    animation: movePattern 20s linear infinite;
+}
+
+@keyframes movePattern {
+    from { background-position: 0 0; }
+    to { background-position: 200px 200px; }
 }
 
 main {
     width: 100%;
 }
 
+#currentDate {
+    color: #435238; 
+}
 
 
 .hero-section {
@@ -23,7 +32,13 @@ main {
     background-size: cover;
     background-position: center;
     min-height: 350px;
-    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.hero-section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .custom-card {
@@ -93,6 +108,11 @@ main {
     display: block;
 }
 
+.brand-green {
+    color: #435238;
+    text-shadow: 2px 2px 4px rgba(67, 82, 56, 0.5);
+}
+
 /* Pill container (cards or small blocks) */
 .pill {
     padding: 10px 18px;
@@ -121,9 +141,22 @@ main {
 }
 
 .update {
+    font-family: "Times New Roman", Times, serif;
     color: rgb(7, 60, 7);
+    background-color: #f5f5f5; /* light background so edges show */
+    padding: 8px 16px;
+    border-radius: 12px; /* controls how rounded it is */
     text-shadow: 2px 2px 4px rgba(67, 82, 56, 0.5);
+
+    display: inline-block;
+    transition: all 0.3s ease;
 }
+
+.update:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(67, 82, 56, 0.3);
+}
+
 
 .news-grid {
     display: grid;
